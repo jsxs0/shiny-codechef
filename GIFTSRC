@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int T=0,N=0,x=0,y=0;
+	cin>>T;
+	while(T--)
+	{
+	    cin>>N;
+	    char S[N];
+	    cin.getline(S,N);
+	    for(int i=0;i<N;++i)
+	    {
+	        if(char.S[i]=='L')
+	        {
+	            x=x-1;
+	            y=y;
+	            if(char.S[i++]=='R')
+	            {
+	                break;
+	            }
+	        }
+	        else if(char.S[i]=='R')
+	        {
+	            x=x+1;
+	            y=y;
+	            if(char.S[i++]=='L')
+	            {
+	                break;
+	            }
+	        }
+	        else if(char.S[i]=='U')
+	        {
+	            x=x;
+	            y=y+1;
+	            if(char.S[i++]=='D')
+	            {
+	                break;
+	            }
+	        }
+	        else if(char.S[i]=='D')
+	        {
+	            x=x;
+	            y=y-1;
+	            if(char.S[i++]=='U')
+	            {
+	                break;
+	            }
+	        }
+	    }
+	    cout<<x;
+	    cout<<y;
+	    
+	}
+	return 0;
+}
